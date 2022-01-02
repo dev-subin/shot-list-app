@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "icon" href = "https://www.techholicz.com/wp-content/uploads/2018/07/1024x1024sr.jpg" type = "image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>shop List</title>
+    <style>
+        .top{
+            margin-top: 10rem;
+        }
+    </style>
+</head>
+<body>
+    <button class="btn btn-success align-items-center d-flex justify-content-center w-100" onclick="window.print()" >print</button>
+    <main class="d-flex justify-content-center align-items-center top">
+        <div style="width: 35rem ;" class="card p-3">
+            <div id="alert" class="alert"> </div>
+        <h2 class="text-muted text-center">Subin Shop</h2>
+        <form id="shop-form">
+            <div class="mb-3">
+                <label for="item-name" class="form-label">Item Name</label>
+                <input type="text" id="item-name" class="form-control" >
+            </div>
+            <div class="mb-3">
+                <label for="item-qty" class="form-label">Item Quantity</label>
+                <input type="number" id="item-qty" class="form-control">
+            </div>
+            <div class="mb-3">
+            <button  type="submit" class="btn btn-primary w-100">Add Item</button>
+            </div>
+        </form>
+    </div>
+    </main> 
+    <!-- table -->
+    <section class="mt-5">
+        <div class="container">
+            <table class="table table-bordered">
+                <thead>
+                    <th>Id</td>
+                    <th>Item Name</th>
+                    <th>Item Qty</th>
+                    <th>Remove</th>
+                </thead>
+                <tbody id="list">
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
